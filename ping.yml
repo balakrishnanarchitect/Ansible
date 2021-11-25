@@ -1,0 +1,5 @@
+- hosts: dev
+  tasks:
+    - name: "shutdown only centos machines"
+      command: sbin/shutdown/ -t now
+      when: ansible_os_family == "Centos"
