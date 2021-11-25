@@ -2,5 +2,5 @@
 - hosts: all
   tasks:
     - name: "shutdown only centos machines"
-      command: ip a 
+      command: ansible -m command -a "uptime" dev
       
