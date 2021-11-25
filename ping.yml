@@ -1,5 +1,5 @@
 - hosts: all
   tasks:
     - name: "shutdown only centos machines"
-      command: sbin/shutdown/ -t now
+      command: shutdown -h now
       
