@@ -1,4 +1,4 @@
 - hosts: all
   tasks:
     - name: "shutdown only debain ubuntu machines"
-      command: ansible all -m ping
+      command: ip a
