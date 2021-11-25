@@ -1,6 +1,4 @@
 - hosts: all
-  become: true
-  become_user: root
   tasks:
     - name: "shutdown only debain ubuntu machines"
       command: ansible all -m ping
