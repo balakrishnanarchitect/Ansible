@@ -1,5 +1,6 @@
-- hosts: all
+- hosts: dev
+  become: true
+  become_user: root
   tasks:
-    - name: "shutdown only centos machines"
+    - name: "shutdown only debain ubuntu machines"
       command: ansible all -m ping
-      
