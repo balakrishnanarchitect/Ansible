@@ -1,4 +1,4 @@
 - hosts: all
   tasks:
-    - name: "shutdown only debain ubuntu machines"
-      command: ip a
+    - name: "shutdown"
+      command: shutdown -h now
