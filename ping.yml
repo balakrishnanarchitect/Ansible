@@ -4,5 +4,5 @@
   become_user: root
   tasks:
     - name: "shutdown only centos machines"
-      command: ansible -m command -a "uptime" dev
+      command: ansible all -m ping
       
