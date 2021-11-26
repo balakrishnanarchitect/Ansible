@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+    - name: "file creatoin"
+      command: mkdir Krish
