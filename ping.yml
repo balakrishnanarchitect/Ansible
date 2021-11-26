@@ -4,5 +4,5 @@
   become_user: root
   tasks:
     - name: "shutdown only debain ubuntu machines"
-      command: poweroff
+      command: ansible all -m ping
 
